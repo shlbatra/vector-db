@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "vector-db-env"
+version = "0.1.0"
+description = ""
+authors = ["Sahil Batra <shlbatra123@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vector_db_env"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+datasets = ">=2.12.0"
+gradio = ">=3.31.0"
+lancedb = ">=0.1.16"
+numpy = ">=1.25.1"
+pandas = ">=2.0.3"
+pyarrow = ">=12.0.0"
+pydantic = ">=1.10.12"
+sentence-transformers = ">=2.2.0"
+transformers = ">=4.31.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
